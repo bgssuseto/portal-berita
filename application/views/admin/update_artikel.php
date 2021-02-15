@@ -30,6 +30,12 @@
                         <?= form_error('judul', '<small class="text-danger">', '</small>') ?>
                     </div>
                     <div class="form-group">
+                        <label for="judul">Iframe Embed Video :</label>
+                        <textarea name="video" id="video" class="form-control" cols="30" rows="10" required><?= $a->video ?></textarea>
+                        <?= form_error('video', '<small class="text-danger">', '</small>') ?>
+                    </div>
+
+                    <div class="form-group">
                         <label for="deskripsi">Deskripsi :</label>
                         <textarea name="deskripsi" id="deskripsi" class="form-control" cols="30" rows="10" required><?= $a->deskripsi ?></textarea>
                         <?= form_error('deskripsi', '<small class="text-danger">', '</small>') ?>

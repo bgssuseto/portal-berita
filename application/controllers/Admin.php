@@ -40,6 +40,7 @@ class Admin extends CI_Controller
 
         // set validasi form
         $this->form_validation->set_rules('tgl', 'Tanggal', 'required|trim');
+        $this->form_validation->set_rules('video', 'Video', 'required');
         $this->form_validation->set_rules('judul', 'Judul Artikel', 'required|trim');
         $this->form_validation->set_rules('deskripsi', 'Deskripsi', 'required|trim');
 
@@ -57,6 +58,7 @@ class Admin extends CI_Controller
     {
         $data = [
             'tanggal'          => htmlspecialchars($this->input->post('tgl')),
+            'video'         => $this->input->post('video'),
             'judul_artikel'    => htmlspecialchars($this->input->post('judul')),
             'deskripsi'        => htmlspecialchars($this->input->post('deskripsi')),
             'image'            => $this->upload_image() //fungsi upload gambar
@@ -127,6 +129,7 @@ class Admin extends CI_Controller
         $id = $this->input->post('id');
         $data = [
             'tanggal'       => $this->input->post('tgl'),
+            'video'         => $this->input->post('video'),
             'judul_artikel' => htmlspecialchars($this->input->post('judul')),
             'deskripsi'     => htmlspecialchars($this->input->post('deskripsi')),
             'image'         => $image

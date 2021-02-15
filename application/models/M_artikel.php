@@ -10,6 +10,8 @@ class M_artikel extends CI_Model
     }
 
 
+
+
     public function update_artikel($id, $data)
     {
         $this->db->where('id', $id);

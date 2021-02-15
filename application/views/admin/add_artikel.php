@@ -30,6 +30,11 @@
                     <?= form_error('judul', '<small class="text-danger">', '</small>') ?>
                 </div>
                 <div class="form-group">
+                    <label for="video">Iframe Embed Video :</label>
+                    <input type="text" class="form-control" name="video" value="<?= set_value('video') ?>">
+                    <?= form_error('video', '<small class="text-danger">', '</small>') ?>
+                </div>
+                <div class="form-group">
                     <label for="deskripsi">Deskripsi :</label>
                     <textarea name="deskripsi" id="deskripsi" class="form-control" cols="30" rows="10" value="<?= set_value('deskripsi') ?>"></textarea>
                     <?= form_error('deskripsi', '<small class="text-danger">', '</small>') ?>
