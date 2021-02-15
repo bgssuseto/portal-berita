@@ -58,7 +58,7 @@ class Admin extends CI_Controller
     {
         $data = [
             'tanggal'          => htmlspecialchars($this->input->post('tgl')),
-            'video'         => $this->input->post('video'),
+            'video'            => $this->input->post('video'),
             'judul_artikel'    => htmlspecialchars($this->input->post('judul')),
             'deskripsi'        => htmlspecialchars($this->input->post('deskripsi')),
             'image'            => $this->upload_image() //fungsi upload gambar
@@ -73,7 +73,7 @@ class Admin extends CI_Controller
     public function upload_image()
     {
         // konfigurasi upload file
-        $config['upload_path']      = './assets/img/artikel/';
+        $config['upload_path']      = './assets/images/berita/';
         $config['allowed_types']    = 'gif|jpg|png';
         $config['max_size']         = '2048';
         $config['overwrite']        = true;
