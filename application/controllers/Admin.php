@@ -73,7 +73,7 @@ class Admin extends CI_Controller
     public function upload_image()
     {
         // konfigurasi upload file
-        $config['upload_path']      = './assets/images/berita/';
+        $config['upload_path']      = './assets/img/artikel';
         $config['allowed_types']    = 'gif|jpg|png';
         $config['max_size']         = '2048';
         $config['overwrite']        = true;

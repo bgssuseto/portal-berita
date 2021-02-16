@@ -20,86 +20,40 @@
 	<link href="<?= base_url('assets/'); ?>css/owl.carousel.css" rel="stylesheet" type="text/css" />
 	<link href="<?= base_url('assets/'); ?>css/owl.theme.default.css" rel="stylesheet" type="text/css" />
 	<!-- Bootstrap CSS -->
-	<link href="<?= base_url('assets/'); ?>css/style_1.css" rel="stylesheet" type="text/css" />
+	<link href="<?= base_url('assets/'); ?>css/style_1.css" rel="stylesheet" type="text/css">
 	<!-- Modernizr JS -->
 	<script src="<?= base_url('assets/'); ?>js/modernizr-3.5.0.min.js"></script>
 </head>
 
 <body>
-	<div class="container-fluid fh5co_header_bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 fh5co_mediya_center"><a href="#" class="color_fff fh5co_mediya_setting"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;<?= time();
-																																							date('Y-M-D');  ?></a>
-					<div class="d-inline-block fh5co_trading_posotion_relative"><a href="#" class="treding_btn">Trending</a>
-						<div class="fh5co_treding_position_absolute"></div>
-					</div>
-					<a href="#" class="color_fff fh5co_mediya_setting">Instagram’s big redesign goes live with black-and-white app</a>
-				</div>
-			</div>
-		</div>
-	</div>
+
 	<div class="container-fluid">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-3 fh5co_padding_menu">
 					<img src="images/logo.png" alt="img" class="fh5co_logo_width" />
 				</div>
-				<div class="col-12 col-md-9 align-self-center fh5co_mediya_right">
-					<div class="text-center d-inline-block">
-						<a class="fh5co_display_table">
-							<div class="fh5co_verticle_middle"><i class="fa fa-search"></i></div>
-						</a>
-					</div>
-					<div class="text-center d-inline-block">
-						<a class="fh5co_display_table">
-							<div class="fh5co_verticle_middle"><i class="fa fa-linkedin"></i></div>
-						</a>
-					</div>
-					<div class="text-center d-inline-block">
-						<a class="fh5co_display_table">
-							<div class="fh5co_verticle_middle"><i class="fa fa-google-plus"></i></div>
-						</a>
-					</div>
-					<div class="text-center d-inline-block">
-						<a href="https://twitter.com/fh5co" target="_blank" class="fh5co_display_table">
-							<div class="fh5co_verticle_middle"><i class="fa fa-twitter"></i></div>
-						</a>
-					</div>
-					<div class="text-center d-inline-block">
-						<a href="https://fb.com/fh5co" target="_blank" class="fh5co_display_table">
-							<div class="fh5co_verticle_middle"><i class="fa fa-facebook"></i></div>
-						</a>
-					</div>
-					<!--<div class="d-inline-block text-center"><img src="images/country.png" alt="img" class="fh5co_country_width"/></div>-->
-					<div class="d-inline-block text-center dd_position_relative ">
-						<select class="form-control fh5co_text_select_option">
-							<option>English </option>
-							<option>French </option>
-							<option>German </option>
-							<option>Spanish </option>
-						</select>
-					</div>
-					<div class="clearfix"></div>
-				</div>
+
+				<div class="clearfix"></div>
 			</div>
 		</div>
+	</div>
 	</div>
 	<div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
 		<div class="container padding_786">
 			<nav class="navbar navbar-toggleable-md navbar-light ">
 				<button class="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
-				<a class="navbar-brand" href="#"><img src="images/logo.png" alt="img" class="mobile_logo_width" /></a>
+				<a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" class="mobile_logo_width" /></a>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item ">
-							<a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="blog.html">Kesehatan <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item ">
-							<a class="nav-link" href="single.html">Single <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="single.html">Gizi <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">World <span class="sr-only">(current)</span></a>
@@ -125,167 +79,29 @@
 			</nav>
 		</div>
 	</div>
-	<div class="container-fluid paddding mb-5">
-		<div class="row mx-0">
-			<div class="col-md-6 col-12 paddding animate-box" data-animate-effect="fadeIn">
-				<div class="fh5co_suceefh5co_height"><img src="<?= base_url('assets/img/artikel/') . $artikel['image'] ?>" alt="img" />
-					<div class="fh5co_suceefh5co_height_position_absolute"></div>
-					<div class="fh5co_suceefh5co_height_position_absolute_font">
-						<div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;Dec 31,2017
-							</a></div>
-						<div class=""><a href="single.html" class="fh5co_good_font"> After all is said and done, more is said than done </a></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="row">
-					<div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
-						<div class="fh5co_suceefh5co_height_2"><img src="images/science-578x362.jpg" alt="img" />
-							<div class="fh5co_suceefh5co_height_position_absolute"></div>
-							<div class="fh5co_suceefh5co_height_position_absolute_font_2">
-								<div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;Oct
-										28,2017 </a></div>
-								<div class=""><a href="single.html" class="fh5co_good_font_2"> After all is said and done, <br>more is said than done </a></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
-						<div class="fh5co_suceefh5co_height_2"><img src="images/joe-gardner-75333.jpg" alt="img" />
-							<div class="fh5co_suceefh5co_height_position_absolute"></div>
-							<div class="fh5co_suceefh5co_height_position_absolute_font_2">
-								<div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;Oct 28,2017 </a></div>
-								<div class=""><a href="single.html" class="fh5co_good_font_2"> After all is said and done... </a></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
-						<div class="fh5co_suceefh5co_height_2"><img src="images/ryan-moreno-98837.jpg" alt="img" />
-							<div class="fh5co_suceefh5co_height_position_absolute"></div>
-							<div class="fh5co_suceefh5co_height_position_absolute_font_2">
-								<div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;Oct
-										28,2017 </a></div>
-								<div class=""><a href="single.html" class="fh5co_good_font_2"> After all is said and done, more is said than done </a></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
-						<div class="fh5co_suceefh5co_height_2"><img src="images/10-1-1-875x500.jpg" alt="img" />
-							<div class="fh5co_suceefh5co_height_position_absolute"></div>
-							<div class="fh5co_suceefh5co_height_position_absolute_font_2">
-								<div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;Oct
-										28,2017 </a></div>
-								<div class=""><a href="single.html" class="fh5co_good_font_2"> After all is said and done, more is said... </a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+
 	<div class="container-fluid pt-3">
 		<div class="container animate-box" data-animate-effect="fadeIn">
 			<div>
 				<div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Trending</div>
 			</div>
 			<div class="owl-carousel owl-theme js" id="slider1">
-				<div class="item px-2">
-					<div class="fh5co_latest_trading_img_position_relative">
-						<div class="fh5co_latest_trading_img"><img src="images/allef-vinicius-108153.jpg" alt="" class="fh5co_img_special_relative" /></div>
-						<div class="fh5co_latest_trading_img_position_absolute"></div>
-						<div class="fh5co_latest_trading_img_position_absolute_1">
-							<a href="single.html" class="text-white"> Here's a new way to take better photos for instagram </a>
-							<div class="fh5co_latest_trading_date_and_name_color"> Walter Johson - March 7,2017</div>
+				<?php foreach ($artikel as $row) : ?>
+					<div class="item px-2">
+						<div class="fh5co_latest_trading_img_position_relative">
+							<div class="fh5co_latest_trading_img"><img src="<?= base_url('assets/img/artikel/') . $row['image'] ?>" alt="" class="fh5co_img_special_relative"></div>
+							<div class="fh5co_latest_trading_img_position_absolute"></div>
+							<div class="fh5co_latest_trading_img_position_absolute_1">
+								<a href="single.html" class="text-white"> <?= $row['judul_artikel'] ?></a>
+								<div class="fh5co_latest_trading_date_and_name_color"> Fatimatul Zahro <?= $row['tanggal'] ?></div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="item px-2">
-					<div class="fh5co_latest_trading_img_position_relative">
-						<div class="fh5co_latest_trading_img"><img src="images/abigail-keenan-65477.jpg" alt="" class="fh5co_img_special_relative" /></div>
-						<div class="fh5co_latest_trading_img_position_absolute"></div>
-						<div class="fh5co_latest_trading_img_position_absolute_1">
-							<a href="single.html" class="text-white"> Here's a new way to take better photos for instagram </a>
-							<div class="fh5co_latest_trading_date_and_name_color"> Walter Johson - March 7,2017</div>
-						</div>
-					</div>
-				</div>
-				<div class="item px-2">
-					<div class="fh5co_latest_trading_img_position_relative">
-						<div class="fh5co_latest_trading_img"><img src="images/ryan-moreno-98837.jpg" alt="" class="fh5co_img_special_relative" /></div>
-						<div class="fh5co_latest_trading_img_position_absolute"></div>
-						<div class="fh5co_latest_trading_img_position_absolute_1">
-							<a href="single.html" class="text-white"> Here's a new way to take better photos for instagram </a>
-							<div class="fh5co_latest_trading_date_and_name_color"> Walter Johson - March 7,2017</div>
-						</div>
-					</div>
-				</div>
-				<div class="item px-2">
-					<div class="fh5co_latest_trading_img_position_relative">
-						<div class="fh5co_latest_trading_img"><img src="images/science-578x362.jpg" alt="" class="fh5co_img_special_relative" /></div>
-						<div class="fh5co_latest_trading_img_position_absolute"></div>
-						<div class="fh5co_latest_trading_img_position_absolute_1">
-							<a href="single.html" class="text-white"> Here's a new way to take better photos for instagram </a>
-							<div class="fh5co_latest_trading_date_and_name_color"> Walter Johson - March 7,2017</div>
-						</div>
-					</div>
-				</div>
-				<div class="item px-2">
-					<div class="fh5co_latest_trading_img_position_relative">
-						<div class="fh5co_latest_trading_img"><img src="images/nick-karvounis-78711.jpg" alt="" class="fh5co_img_special_relative" /></div>
-						<div class="fh5co_latest_trading_img_position_absolute"></div>
-						<div class="fh5co_latest_trading_img_position_absolute_1">
-							<a href="single.html" class="text-white"> Here's a new way to take better photos for instagram </a>
-							<div class="fh5co_latest_trading_date_and_name_color"> Walter Johson - March 7,2017</div>
-						</div>
-					</div>
-				</div>
+				<?php endforeach; ?>
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid pb-4 pt-5">
-		<div class="container animate-box">
-			<div>
-				<div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">News</div>
-			</div>
-			<div class="owl-carousel owl-theme" id="slider2">
-				<div class="item px-2">
-					<div class="fh5co_hover_news_img">
-						<div class="fh5co_news_img"><img src="images/39-324x235.jpg" alt="" /></div>
-						<div>
-							<a href="single.html" class="d-block fh5co_small_post_heading"><span class="">The top 10 best computer speakers in the market</span></a>
-							<div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
-						</div>
-					</div>
-				</div>
-				<div class="item px-2">
-					<div class="fh5co_hover_news_img">
-						<div class="fh5co_news_img"><img src="images/joe-gardner-75333.jpg" alt="" /></div>
-						<div>
-							<a href="single.html" class="d-block fh5co_small_post_heading"><span class="">The top 10 best computer speakers in the market</span></a>
-							<div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
-						</div>
-					</div>
-				</div>
-				<div class="item px-2">
-					<div class="fh5co_hover_news_img">
-						<div class="fh5co_news_img"><img src="images/ryan-moreno-98837.jpg" alt="" /></div>
-						<div>
-							<a href="single.html" class="d-block fh5co_small_post_heading"><span class="">The top 10 best computer speakers in the market</span></a>
-							<div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
-						</div>
-					</div>
-				</div>
-				<div class="item px-2">
-					<div class="fh5co_hover_news_img">
-						<div class="fh5co_news_img"><img src="images/seth-doyle-133175.jpg" alt="" /></div>
-						<div>
-							<a href="single.html" class="d-block fh5co_small_post_heading"><span class="">The top 10 best computer speakers in the market</span></a>
-							<div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+
 	<div class="container-fluid fh5co_video_news_bg pb-4">
 		<div class="container animate-box" data-animate-effect="fadeIn">
 			<div>
@@ -293,102 +109,33 @@
 			</div>
 			<div>
 				<div class="owl-carousel owl-theme" id="slider3">
-					<div class="item px-2">
-						<div class="fh5co_hover_news_img">
-							<div class="fh5co_hover_news_img_video_tag_position_relative">
-								<div class="fh5co_news_img">
-									<iframe id="video" width="100%" height="200" src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-								</div>
-								<div class="fh5co_hover_news_img_video_tag_position_absolute fh5co_hide">
-									<img src="images/ariel-lustre-208615.jpg" alt="" />
-								</div>
-								<div class="fh5co_hover_news_img_video_tag_position_absolute_1 fh5co_hide" id="play-video">
-									<div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1">
-										<div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button">
-											<span><i class="fa fa-play"></i></span>
+					<?php foreach ($artikel as $row) : ?>
+						<div class="item px-2">
+							<div class="fh5co_hover_news_img">
+								<div class="fh5co_hover_news_img_video_tag_position_relative">
+									<div class="fh5co_news_img">
+										<iframe id="video" width="100%" height="200" src="<?= $row['video'] ?>" frameborder="0" allowfullscreen></iframe>
+									</div>
+									<div class="fh5co_hover_news_img_video_tag_position_absolute fh5co_hide">
+										<img src="images/ariel-lustre-208615.jpg" alt="" />
+									</div>
+									<div class="fh5co_hover_news_img_video_tag_position_absolute_1 fh5co_hide" id="play-video">
+										<div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1">
+											<div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button">
+												<span><i class="fa fa-play"></i></span>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="pt-2">
-								<a href="#" class="d-block fh5co_small_post_heading fh5co_small_post_heading_1">
-									<span class="">The top 10 funniest videos on YouTube </span></a>
-								<div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
-							</div>
-						</div>
-					</div>
-					<div class="item px-2">
-						<div class="fh5co_hover_news_img">
-							<div class="fh5co_hover_news_img_video_tag_position_relative">
-								<div class="fh5co_news_img">
-									<iframe id="video_2" width="100%" height="200" src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-								</div>
-								<div class="fh5co_hover_news_img_video_tag_position_absolute fh5co_hide_2">
-									<img src="images/39-324x235.jpg" alt="" />
-								</div>
-								<div class="fh5co_hover_news_img_video_tag_position_absolute_1 fh5co_hide_2" id="play-video_2">
-									<div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1">
-										<div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button">
-											<span><i class="fa fa-play"></i></span>
-										</div>
+								<div class="pt-2">
+									<a href="<?= base_url('Blog/artikel/') . $row['id'] ?>" style="text-decoration: none;">
+										<span class=""><?= $row['judul_artikel'] ?></span></a>
+									<div class=" c_g"><i class="fa fa-clock-o"></i> Oct 16,2017
 									</div>
 								</div>
 							</div>
-							<div class="pt-2">
-								<a href="#" class="d-block fh5co_small_post_heading fh5co_small_post_heading_1">
-									<span class="">The top 10 embedded YouTube videos this month</span></a>
-								<div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
-							</div>
 						</div>
-					</div>
-					<div class="item px-2">
-						<div class="fh5co_hover_news_img">
-							<div class="fh5co_hover_news_img_video_tag_position_relative">
-								<div class="fh5co_news_img">
-									<iframe id="video_3" width="100%" height="200" src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-								</div>
-								<div class="fh5co_hover_news_img_video_tag_position_absolute fh5co_hide_3">
-									<img src="images/joe-gardner-75333.jpg" alt="" />
-								</div>
-								<div class="fh5co_hover_news_img_video_tag_position_absolute_1 fh5co_hide_3" id="play-video_3">
-									<div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1">
-										<div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button">
-											<span><i class="fa fa-play"></i></span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="pt-2">
-								<a href="#" class="d-block fh5co_small_post_heading fh5co_small_post_heading_1">
-									<span class="">The top 10 best computer speakers in the market</span></a>
-								<div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
-							</div>
-						</div>
-					</div>
-					<div class="item px-2">
-						<div class="fh5co_hover_news_img">
-							<div class="fh5co_hover_news_img_video_tag_position_relative">
-								<div class="fh5co_news_img">
-									<iframe id="video_4" width="100%" height="200" src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-								</div>
-								<div class="fh5co_hover_news_img_video_tag_position_absolute fh5co_hide_4">
-									<img src="images/vil-son-35490.jpg" alt="" />
-								</div>
-								<div class="fh5co_hover_news_img_video_tag_position_absolute_1 fh5co_hide_4" id="play-video_4">
-									<div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1">
-										<div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button">
-											<span><i class="fa fa-play"></i></span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="pt-2">
-								<a href="#" class="d-block fh5co_small_post_heading fh5co_small_post_heading_1">
-									<span class="">The top 10 best computer speakers in the market</span></a>
-								<div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
-							</div>
-						</div>
-					</div>
+					<?php endforeach; ?>
 				</div>
 			</div>
 		</div>
