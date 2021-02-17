@@ -65,27 +65,15 @@
 							<a class="nav-link" href="<?= base_url('') ?>">Beranda <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item ">
-							<a class="nav-link" href="blog.html">Kesehatan <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="<?= base_url('Blog/tag/Kesehatan') ?>">Kesehatan <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item ">
-							<a class="nav-link" href="single.html">Gizi <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="<?= base_url('Blog/tag/Berita') ?>">Berita <span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">World <span class="sr-only">(current)</span></a>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
-								<a class="dropdown-item" href="#">Action in</a>
-								<a class="dropdown-item" href="#">Another action</a>
-								<a class="dropdown-item" href="#">Something else here</a>
-							</div>
+						<li class="nav-item ">
+							<a class="nav-link" href="<?= base_url('Blog/tag/Pembelajaran') ?>">Pembelajaran <span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community<span class="sr-only">(current)</span></a>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
-								<a class="dropdown-item" href="#">Action in</a>
-								<a class="dropdown-item" href="#">Another action</a>
-								<a class="dropdown-item" href="#">Something else here</a>
-							</div>
-						</li>
+
 						<li class="nav-item ">
 							<a class="nav-link" href="Contact_us.html">Contact <span class="sr-only">(current)</span></a>
 						</li>
