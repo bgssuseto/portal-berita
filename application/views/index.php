@@ -75,14 +75,16 @@
 						</div>
 						<div class="col-md-7 animate-box">
 							<a href="<?= base_url('Blog/artikel/') . $row['id'] ?>" class="fh5co_magna py-2"> <?= $row['judul_artikel'] ?> </a>
-							<a href="single.html" class="fh5co_mini_time py-3"><?= $row['author'] ?> </a>
+
 							<div class="fh5co_consectetur"> <?= htmlspecialchars_decode(character_limiter($row['deskripsi'], 350)); ?>
 							</div>
+							<p style="font-style: oblique; text-color:grey; font-size:12px;">Author : <?= $row['author'] ?> &nbsp; <i class="fas fa-clock"></i> <?= $row['tanggal'] ?></p>
+
 						</div>
 					</div>
 				<?php endforeach; ?>
 			</div>
-			<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+			<div class=" col-md-3 animate-box" data-animate-effect="fadeInRight">
 				<div>
 					<div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Tags</div>
 				</div>

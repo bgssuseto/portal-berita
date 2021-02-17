@@ -30,7 +30,7 @@
                             <th class="text-center">Judul</th>
                             <th class="text-center" width="300">Deskripsi</th>
                             <th class="text-center">Image</th>
-                            <th class="text-center">Aksi</th>
+                            <th class="text-center" width="100px">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>

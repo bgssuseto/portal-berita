@@ -130,9 +130,9 @@ class Admin extends CI_Controller
 
         $id = $this->input->post('id');
         $data = [
-            'tanggal'       => $this->input->post('tgl'),
-            'tag'              => $this->input->post('tag'),
-            'author'              => $this->input->post('author'),
+            'tanggal'       => htmlspecialchars($this->input->post('tgl')),
+            'tag'           => $this->input->post('tag'),
+            'author'        => $this->input->post('author'),
             'video'         => $this->input->post('video'),
             'judul_artikel' => htmlspecialchars($this->input->post('judul')),
             'deskripsi'     => htmlspecialchars($this->input->post('deskripsi')),
