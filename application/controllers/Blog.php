@@ -12,7 +12,7 @@ class Blog extends CI_Controller
     {
         $data['attr'] = $this->db->get('artikel')->result_array();
         $data['artikel'] = $this->M_artikel->get_artikel_by_id2($id);
-        $data['title'] = 'Nanti Jadi Judul Deh';
+        $data['title'] = 'Health-Tell: Videos';
         $this->load->view('index-templates/header', $data);
         $this->load->view('blog/artikel', $data);
         $this->load->view('index-templates/footer');

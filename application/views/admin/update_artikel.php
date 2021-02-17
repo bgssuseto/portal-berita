@@ -9,7 +9,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Update Data Artikel</h1>
+        <h1 class="h3 mb-0 text-gray-800">Update Data Video</h1>
     </div>
 
     <!-- Content Row -->
@@ -25,7 +25,7 @@
                         <?= form_error('tgl', '<small class="text-danger">', '</small>') ?>
                     </div>
                     <div class="form-group">
-                        <label for="judul">Judul Artikel :</label>
+                        <label for="judul">Judul Video :</label>
                         <input type="text" class="form-control" name="judul" value="<?= $a->judul_artikel ?>" required>
                         <?= form_error('judul', '<small class="text-danger">', '</small>') ?>
                     </div>

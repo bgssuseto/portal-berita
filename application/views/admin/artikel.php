@@ -9,11 +9,11 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Artikel</h1>
+        <h1 class="h3 mb-0 text-gray-800">Video</h1>
     </div>
 
     <!-- Content Row -->
-    <a href="<?= base_url('admin/add_artikel') ?>" class="btn btn-primary btn-sm my-3">Tambah Data Artikel</a>
+    <a href="<?= base_url('admin/add_artikel') ?>" class="btn btn-primary btn-sm my-3">Tambah Data Video</a>
 
     <!-- menampilkan pesan flash data dari session -->
     <?= $this->session->flashdata('message') ?>

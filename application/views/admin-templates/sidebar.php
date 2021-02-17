@@ -4,9 +4,9 @@
      <!-- Sidebar - Brand -->
      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
          <div class="sidebar-brand-icon rotate-n-15">
-             <i class="fas fa-laugh-wink"></i>
+             <i class="fas fa-love"></i>
          </div>
-         <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+         <div class="sidebar-brand-text mx-3">Admin Health-Tell <sup>2</sup></div>
      </a>
 
      <!-- Divider -->
@@ -31,12 +31,12 @@
      <li class="nav-item">
          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
              <i class="fas fa-fw fa-cog"></i>
-             <span>Artikel</span>
+             <span>Video</span>
          </a>
          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
              <div class="bg-white py-2 collapse-inner rounded">
-                 <h6 class="collapse-header">Artikel</h6>
-                 <a class="collapse-item" href="<?= base_url('admin/artikel') ?>">Data Artikel</a>
+                 <h6 class="collapse-header">Video</h6>
+                 <a class="collapse-item" href="<?= base_url('admin/artikel') ?>">Data Video</a>
              </div>
          </div>
      </li>
