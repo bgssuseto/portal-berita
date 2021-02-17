@@ -59,8 +59,10 @@ class Admin extends CI_Controller
         $data = [
             'tanggal'          => htmlspecialchars($this->input->post('tgl')),
             'video'            => $this->input->post('video'),
+            'tag'              => $this->input->post('tag'),
             'judul_artikel'    => htmlspecialchars($this->input->post('judul')),
             'deskripsi'        => htmlspecialchars($this->input->post('deskripsi')),
+            'author'              => $this->input->post('author'),
             'image'            => $this->upload_image() //fungsi upload gambar
         ];
         $this->db->insert('artikel', $data);
@@ -129,6 +131,8 @@ class Admin extends CI_Controller
         $id = $this->input->post('id');
         $data = [
             'tanggal'       => $this->input->post('tgl'),
+            'tag'              => $this->input->post('tag'),
+            'author'              => $this->input->post('author'),
             'video'         => $this->input->post('video'),
             'judul_artikel' => htmlspecialchars($this->input->post('judul')),
             'deskripsi'     => htmlspecialchars($this->input->post('deskripsi')),

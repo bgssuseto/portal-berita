@@ -22,7 +22,8 @@ class Welcome extends CI_Controller
 	public function index()
 	{
 		$data['artikel'] = $this->db->get('artikel')->result_array();
-
+		$this->load->view('index-templates/header');
 		$this->load->view('index', $data);
+		$this->load->view('index-templates/footer');
 	}
 }

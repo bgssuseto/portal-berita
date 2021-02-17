@@ -43,7 +43,7 @@
                                     <?= date('d-m-Y', strtotime($a->tanggal)) ?>
                                 </td>
                                 <td><?= $a->judul_artikel ?></td>
-                                <td><?= character_limiter($a->deskripsi, 30); ?></td>
+                                <td><?= htmlspecialchars_decode(character_limiter($a->deskripsi, 30)); ?></td>
                                 <td class="text-center">
                                     <img src="<?= base_url('assets/img/artikel/') . $a->image ?>" width="50px" height="50px">
                                 </td>

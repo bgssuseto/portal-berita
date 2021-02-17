@@ -8,6 +8,11 @@ class M_artikel extends CI_Model
         $this->db->where('id', $id);
         return $this->db->get('artikel');
     }
+    public function get_artikel_by_id2($id)
+    {
+        $this->db->where('id', $id);
+        return $this->db->get('artikel')->row_array();
+    }
 
 
 
