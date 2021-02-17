@@ -69,14 +69,14 @@
 					<div class="row pb-4">
 						<div class="col-md-5">
 							<div class="fh5co_hover_news_img">
-								<div class="fh5co_news_img"><img src="<?= $row['images'] ?>" alt="" /></div>
+								<div class="fh5co_news_img"><img src="<?= base_url('assets/img/artikel/') . $row['image'] ?>" alt="" /></div>
 								<div></div>
 							</div>
 						</div>
 						<div class="col-md-7 animate-box">
-							<a href="single.html" class="fh5co_magna py-2"> <?= $row['judul_artikel'] ?> </a> <a href="single.html" class="fh5co_mini_time py-3"> Thomson Smith -
-								<?= $row['author']['tanggal'] ?> </a>
-							<div class="fh5co_consectetur"> <?= htmlspecialchars_decode(character_limiter($row['deskripsi'], 30)); ?>
+							<a href="<?= base_url('Blog/artikel/') . $row['id'] ?>" class="fh5co_magna py-2"> <?= $row['judul_artikel'] ?> </a>
+							<a href="single.html" class="fh5co_mini_time py-3"><?= $row['author'] ?> </a>
+							<div class="fh5co_consectetur"> <?= htmlspecialchars_decode(character_limiter($row['deskripsi'], 350)); ?>
 							</div>
 						</div>
 					</div>

@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title><?= $title ?></title>
-    <script src="https://cdn.ckeditor.com/4.16.0/full/ckeditor.js"></script>
+
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url('assets/') ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,6 +24,7 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/custom.css">
+    <script src="https://cdn.ckeditor.com/4.16.0/full/ckeditor.js"></script>
 
 </head>
 
