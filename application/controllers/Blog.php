@@ -7,5 +7,6 @@ class Blog extends CI_Controller
     {
         $this->load->model('M_artikel');
         $data['artikel'] = $this->M_artikel->get_artikel_by_id2($id);
+        $this->load->view('blog/artikel', $data);
     }
 }
