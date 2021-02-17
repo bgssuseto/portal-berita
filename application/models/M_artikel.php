@@ -16,6 +16,12 @@ class M_artikel extends CI_Model
     }
 
 
+    public function get_by_tag()
+    {
+
+        $this->db->group_by('tag', $this->uri->segment(3));
+        return $this->db->get('artikel');
+    }
 
 
     public function update_artikel($id, $data)

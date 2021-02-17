@@ -34,7 +34,16 @@
                         <textarea name="video" id="video" class="form-control" cols="30" rows="10" required><?= $a->video ?></textarea>
                         <?= form_error('video', '<small class="text-danger">', '</small>') ?>
                     </div>
-
+                    <div class="form-group">
+                        <label for="judul">Author :</label>
+                        <input type="text" class="form-control" name="author" value="<?= $a->author ?>" required>
+                        <?= form_error('author', '<small class="text-danger">', '</small>') ?>
+                    </div>
+                    <div class="form-group">
+                        <label for="judul">Tag :</label>
+                        <input type="text" class="form-control" name="tag" value="<?= $a->tag ?>" required>
+                        <?= form_error('tag', '<small class="text-danger">', '</small>') ?>
+                    </div>
                     <div class="form-group">
                         <label for="deskripsi">Deskripsi :</label>
                         <textarea cols="80" name="deskripsi" id="editor1" name="editor1" rows=" 10" data-sample-short><?= htmlspecialchars_decode($a->deskripsi) ?></textarea>

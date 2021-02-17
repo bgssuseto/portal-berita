@@ -76,7 +76,7 @@ class Admin extends CI_Controller
     {
         // konfigurasi upload file
         $config['upload_path']      = './assets/img/artikel';
-        $config['allowed_types']    = 'gif|jpg|png';
+        $config['allowed_types']    = 'gif|jpg|png|jpeg';
         $config['max_size']         = '2048';
         $config['overwrite']        = true;
         $config['filename']         = $_FILES['image']['name'];

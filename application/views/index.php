@@ -1,29 +1,7 @@
-<div class="container-fluid pt-3">
-	<div class="container animate-box" data-animate-effect="fadeIn">
-		<div>
-			<div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Trending</div>
-		</div>
-		<div class="owl-carousel owl-theme js" id="slider1">
-			<?php foreach ($artikel as $row) : ?>
-				<div class="item px-2">
-					<div class="fh5co_latest_trading_img_position_relative">
-						<div class="fh5co_latest_trading_img"><img src="<?= base_url('assets/img/artikel/') . $row['image'] ?>" alt="" class="fh5co_img_special_relative"></div>
-						<div class="fh5co_latest_trading_img_position_absolute"></div>
-						<div class="fh5co_latest_trading_img_position_absolute_1">
-							<a href="single.html" class="text-white"> <?= $row['judul_artikel'] ?></a>
-							<div class="fh5co_latest_trading_date_and_name_color"> Fatimatul Zahro <?= $row['tanggal'] ?></div>
-						</div>
-					</div>
-				</div>
-			<?php endforeach; ?>
-		</div>
-	</div>
-</div>
-
 <div class="container-fluid fh5co_video_news_bg pb-4">
 	<div class="container animate-box" data-animate-effect="fadeIn">
 		<div>
-			<div class="fh5co_heading fh5co_heading_border_bottom pt-5 pb-2 mb-4  text-white">Video News</div>
+			<div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Sedang Hangat</div>
 		</div>
 		<div>
 			<div class="owl-carousel owl-theme" id="slider3">
@@ -48,7 +26,7 @@
 							<div class="pt-2">
 								<a href="<?= base_url('Blog/artikel/') . $row['id'] ?>" style="text-decoration: none;">
 									<span class=""><?= $row['judul_artikel'] ?></span></a>
-								<div class=" c_g"><i class="fa fa-clock-o"></i> Oct 16,2017
+								<div class=" c_g" style="font-style: oblique; font-size:13px;">Author : <?= $row['author'] ?>&nbsp; <i class="fa fa-clock"></i> <?= $row['tanggal'] ?>
 								</div>
 							</div>
 						</div>
@@ -63,7 +41,7 @@
 		<div class="row mx-0">
 			<div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
 				<div>
-					<div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">News</div>
+					<div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Artikel Terbaru</div>
 				</div>
 				<?php foreach ($artikel as $row) : ?>
 					<div class="row pb-4">
@@ -76,7 +54,7 @@
 						<div class="col-md-7 animate-box">
 							<a href="<?= base_url('Blog/artikel/') . $row['id'] ?>" class="fh5co_magna py-2"> <?= $row['judul_artikel'] ?> </a>
 
-							<div class="fh5co_consectetur"> <?= htmlspecialchars_decode(character_limiter($row['deskripsi'], 350)); ?>
+							<div class="fh5co_consectetur" style="text-align: justify;"> <?= htmlspecialchars_decode(character_limiter($row['deskripsi'], 350)); ?>
 							</div>
 							<p style="font-style: oblique; text-color:grey; font-size:12px;">Author : <?= $row['author'] ?> &nbsp; <i class="fas fa-clock"></i> <?= $row['tanggal'] ?></p>
 
@@ -90,56 +68,26 @@
 				</div>
 				<div class="clearfix"></div>
 				<div class="fh5co_tags_all">
-					<a href="#" class="fh5co_tagg">Business</a>
-					<a href="#" class="fh5co_tagg">Technology</a>
-					<a href="#" class="fh5co_tagg">Sport</a>
-					<a href="#" class="fh5co_tagg">Art</a>
-					<a href="#" class="fh5co_tagg">Lifestyle</a>
-					<a href="#" class="fh5co_tagg">Three</a>
-					<a href="#" class="fh5co_tagg">Photography</a>
-					<a href="#" class="fh5co_tagg">Lifestyle</a>
-					<a href="#" class="fh5co_tagg">Art</a>
-					<a href="#" class="fh5co_tagg">Education</a>
-					<a href="#" class="fh5co_tagg">Social</a>
-					<a href="#" class="fh5co_tagg">Three</a>
+					<?php foreach ($artikel as $row) : ?>
+						<a href="<?= base_url('Blog/tag/') . $row['tag'] ?>" class="fh5co_tagg"><?= $row['tag'] ?></a>
+					<?php endforeach; ?>
 				</div>
 				<div>
-					<div class="fh5co_heading fh5co_heading_border_bottom pt-3 py-2 mb-4">Most Popular</div>
+					<div class="fh5co_heading fh5co_heading_border_bottom pt-3 py-2 mb-4">Berita Populer</div>
 				</div>
-				<div class="row pb-3">
-					<div class="col-5 align-self-center">
-						<img src="images/download (1).jpg" alt="img" class="fh5co_most_trading" />
+				<?php foreach ($artikel as $row) : ?>
+					<div class="row pb-3">
+						<div class="col-5 align-self-center">
+							<a href="<?= base_url('Blog/artikel/') . $row['id'] ?>"><img src="<?= base_url('assets/img/artikel/') . $row['image'] ?>" alt="img" class="fh5co_most_trading"></a>
+						</div>
+						<div class="col-7 paddding">
+							<div class="most_fh5co_treding_font" style="text-decoration:none;"> <a href="<?= base_url('Blog/artikel/') . $row['id'] ?>"><?= character_limiter($row['judul_artikel'], 30) ?></a></div>
+							<div class="most_fh5co_treding_font_123">
+								<p style="font-style: oblique; text-color:grey; font-size:12px;">Author : <?= $row['author'] ?> &nbsp; <i class="fas fa-clock"></i> <?= $row['tanggal'] ?></p>
+							</div>
+						</div>
 					</div>
-					<div class="col-7 paddding">
-						<div class="most_fh5co_treding_font"> Magna aliqua ut enim ad minim veniam quis nostrud.</div>
-						<div class="most_fh5co_treding_font_123"> April 18, 2016</div>
-					</div>
-				</div>
-				<div class="row pb-3">
-					<div class="col-5 align-self-center">
-						<img src="images/allef-vinicius-108153.jpg" alt="img" class="fh5co_most_trading" />
-					</div>
-					<div class="col-7 paddding">
-						<div class="most_fh5co_treding_font"> Enim ad minim veniam nostrud xercitation ullamco.</div>
-						<div class="most_fh5co_treding_font_123"> April 18, 2016</div>
-					</div>
-				</div>
-				<div class="row pb-3">
-					<div class="col-5 align-self-center">
-						<img src="images/download (2).jpg" alt="img" class="fh5co_most_trading" />
-					</div>
-					<div class="col-7 paddding">
-						<div class="most_fh5co_treding_font"> Magna aliqua ut enim ad minim veniam quis nostrud.</div>
-						<div class="most_fh5co_treding_font_123"> April 18, 2016</div>
-					</div>
-				</div>
-				<div class="row pb-3">
-					<div class="col-5 align-self-center"><img src="images/seth-doyle-133175.jpg" alt="img" class="fh5co_most_trading" /></div>
-					<div class="col-7 paddding">
-						<div class="most_fh5co_treding_font"> Magna aliqua ut enim ad minim veniam quis nostrud.</div>
-						<div class="most_fh5co_treding_font_123"> April 18, 2016</div>
-					</div>
-				</div>
+				<?php endforeach; ?>
 			</div>
 		</div>
 		<div class="row mx-0 animate-box" data-animate-effect="fadeInUp">
