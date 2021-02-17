@@ -5,6 +5,7 @@ class M_artikel extends CI_Model
 
     public function get_artikel_by_id($id)
     {
+        $this->db->order_by('tanggal', 'ASC');
         $this->db->where('id', $id);
         return $this->db->get('artikel');
     }

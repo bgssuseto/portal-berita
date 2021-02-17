@@ -26,6 +26,18 @@
 </head>
 
 <body>
+	<div class="container-fluid fh5co_header_bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 fh5co_mediya_center"><a href="#" class="color_fff fh5co_mediya_setting"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Friday, 5 January 2018</a>
+					<div class="d-inline-block fh5co_trading_posotion_relative"><a href="#" class="treding_btn">Trending</a>
+						<div class="fh5co_treding_position_absolute"></div>
+					</div>
+					<a href="#" class="color_fff fh5co_mediya_setting">Instagram’s big redesign goes live with black-and-white app</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="container-fluid">
 		<div class="container">
@@ -47,7 +59,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="<?= base_url('') ?>">Beranda <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item ">
 							<a class="nav-link" href="blog.html">Kesehatan <span class="sr-only">(current)</span></a>
