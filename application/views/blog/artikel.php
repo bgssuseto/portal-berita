@@ -2,6 +2,9 @@
     <div class="container paddding">
         <div class="row mx-0">
             <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
+                <div class="container" style="margin-bottom: 20px;">
+                    <iframe width="560" height="315" src="<?= $artikel['video']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <h2 style="text-align:center; margin-bottom:10px;"><?= $artikel['judul_artikel']; ?></h2>
                 <?= htmlspecialchars_decode($artikel['deskripsi']); ?>
             </div>
@@ -39,42 +42,17 @@
             <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Trending</div>
         </div>
         <div class="owl-carousel owl-theme" id="slider2">
-            <div class="item px-2">
-                <div class="fh5co_hover_news_img">
-                    <div class="fh5co_news_img"><img src="images/39-324x235.jpg" alt="" /></div>
-                    <div>
-                        <a href="#" class="d-block fh5co_small_post_heading"><span class="">The top 10 best computer speakers in the market</span></a>
-                        <div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
+            <?php foreach ($attr as $row) : ?>
+                <div class="item px-2">
+                    <div class="fh5co_hover_news_img">
+                        <div class="fh5co_news_img"><img src="<?= base_url('assets/img/artikel/') . $row['image'] ?>" alt="" /></div>
+                        <div>
+                            <a href="#" class="d-block fh5co_small_post_heading"><span class=""><?= $row['judul_artikel'] ?></span></a>
+                            <div class="c_g"><i class="fa fa-clock-o"></i> Author : <?= $row['author'] ?> &nbsp; <i class="fas fa-clock"></i> <?= $row['tanggal'] ?></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="item px-2">
-                <div class="fh5co_hover_news_img">
-                    <div class="fh5co_news_img"><img src="images/joe-gardner-75333.jpg" alt="" /></div>
-                    <div>
-                        <a href="#" class="d-block fh5co_small_post_heading"><span class="">The top 10 best computer speakers in the market</span></a>
-                        <div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
-                    </div>
-                </div>
-            </div>
-            <div class="item px-2">
-                <div class="fh5co_hover_news_img">
-                    <div class="fh5co_news_img"><img src="images/ryan-moreno-98837.jpg" alt="" /></div>
-                    <div>
-                        <a href="#" class="d-block fh5co_small_post_heading"><span class="">The top 10 best computer speakers in the market</span></a>
-                        <div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
-                    </div>
-                </div>
-            </div>
-            <div class="item px-2">
-                <div class="fh5co_hover_news_img">
-                    <div class="fh5co_news_img"><img src="images/seth-doyle-133175.jpg" alt="" /></div>
-                    <div>
-                        <a href="#" class="d-block fh5co_small_post_heading"><span class="">The top 10 best computer speakers in the market</span></a>
-                        <div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>

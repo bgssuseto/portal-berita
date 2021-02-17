@@ -41,7 +41,7 @@
 		<div class="row mx-0">
 			<div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
 				<div>
-					<div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Artikel Terbaru</div>
+					<div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">News</div>
 				</div>
 				<?php foreach ($artikel as $row) : ?>
 					<div class="row pb-4">
@@ -54,7 +54,7 @@
 						<div class="col-md-7 animate-box">
 							<a href="<?= base_url('Blog/artikel/') . $row['id'] ?>" class="fh5co_magna py-2"> <?= $row['judul_artikel'] ?> </a>
 
-							<div class="fh5co_consectetur" style="text-align: justify;"> <?= htmlspecialchars_decode(character_limiter($row['deskripsi'], 350)); ?>
+							<div class="fh5co_consectetur" style=""> <?= htmlspecialchars_decode(character_limiter($row['deskripsi'], 350)); ?>
 							</div>
 							<p style="font-style: oblique; text-color:grey; font-size:12px;">Author : <?= $row['author'] ?> &nbsp; <i class="fas fa-clock"></i> <?= $row['tanggal'] ?></p>
 

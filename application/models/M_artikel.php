@@ -5,7 +5,7 @@ class M_artikel extends CI_Model
 
     public function get_artikel_by_id($id)
     {
-        $this->db->order_by('tanggal', 'ASC');
+
         $this->db->where('id', $id);
         return $this->db->get('artikel');
     }
@@ -15,11 +15,17 @@ class M_artikel extends CI_Model
         return $this->db->get('artikel')->row_array();
     }
 
+    public function get_artikel()
+    {
+        $this->db->order_by('id', 'DESC');
+        return $this->db->get('artikel');
+    }
+
 
     public function get_by_tag()
     {
-
-        $this->db->group_by('tag', $this->uri->segment(3));
+        $this->db->order_by('id', 'DESC');
+        $this->db->where('tag', $this->uri->segment(3));
         return $this->db->get('artikel');
     }
 

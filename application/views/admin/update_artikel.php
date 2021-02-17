@@ -31,7 +31,7 @@
                     </div>
                     <div class="form-group">
                         <label for="judul">Iframe Embed Video :</label>
-                        <textarea name="video" id="video" class="form-control" cols="30" rows="10" required><?= $a->video ?></textarea>
+                        <input type="text" name="video" id="video" class="form-control" value="<?= $a->video ?>" required>
                         <?= form_error('video', '<small class="text-danger">', '</small>') ?>
                     </div>
                     <div class="form-group">
