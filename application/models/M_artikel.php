@@ -18,7 +18,7 @@ class M_artikel extends CI_Model
     public function get_artikel()
     {
         $this->db->order_by('id', 'DESC');
-        return $this->db->get('artikel');
+        return $this->db->get('artikel')->result_array();
     }
 
 

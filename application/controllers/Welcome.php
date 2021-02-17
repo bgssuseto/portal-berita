@@ -22,7 +22,7 @@ class Welcome extends CI_Controller
 	public function index()
 	{
 		$data['title'] = 'Healtify';
-		$data['artikel'] = $this->db->get('artikel')->result_array();
+		$data['artikel'] = $this->M_artikel->get_artikel();
 		$this->load->view('index-templates/header', $data);
 		$this->load->view('index', $data);
 		$this->load->view('index-templates/footer');
