@@ -45,29 +45,7 @@
      <hr class="sidebar-divider">
 
      <!-- Heading -->
-     <div class="sidebar-heading">
-         Transaction
-     </div>
 
-     <!-- Nav Item - Charts -->
-     <li class="nav-item">
-         <a class="nav-link" href="charts.html">
-             <i class="fas fa-fw fa-chart-area"></i>
-             <span>Charts</span></a>
-     </li>
-
-     <!-- Divider -->
-     <hr class="sidebar-divider m-0">
-
-     <!-- Nav Item - Tables -->
-     <li class="nav-item">
-         <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">
-             <i class="fas fa-fw fa-table"></i>
-             <span>Logout</span></a>
-     </li>
-
-     <!-- Divider -->
-     <hr class="sidebar-divider d-none d-md-block">
 
      <!-- Sidebar Toggler (Sidebar) -->
      <div class="text-center d-none d-md-inline">
